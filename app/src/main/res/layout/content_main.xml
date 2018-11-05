@@ -10,13 +10,33 @@
 
     <TextView
         android:id="@+id/sample_text"
-        android:layout_width="392dp"
-        android:layout_height="509dp"
-        android:text="¡Bienvenido al creador de personaje de rol de Javi!"
-        android:textSize="58sp"
+        android:layout_width="281dp"
+        android:layout_height="wrap_content"
+        android:text="@string/bienvenida"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        android:typeface="sans"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035"
+        tools:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="134dp"
+        android:layout_height="123dp"
+        android:text="TextView"
+        android:textColor="@color/colorPrimaryDark"
+        android:typeface="normal"
+        android:layout_centerHorizontal="true"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sample_text" />
 
 </android.support.constraint.ConstraintLayout>
